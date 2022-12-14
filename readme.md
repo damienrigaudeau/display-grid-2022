@@ -1,5 +1,5 @@
 # Les displays css: display block
-> Exemple de code html
+> Exemple de code css
 
 ```css
 body{

@@ -1,6 +1,8 @@
 # Les displays css: display block
 > Exemple de code css
 
+[Voir la page de publication](https://damienrigaudeau.github.io/display-grid-2022/)
+
 ```css
 body{
     font: 1.6rem;

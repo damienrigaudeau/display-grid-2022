@@ -1,0 +1,96 @@
+/* reset */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem;
+    margin: 0;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    background-color: rgb(30, 28, 28);
+}
+h1,h2,h3,h4,h5,h6,
+p,ul,ol,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--color-alert);
+}
+button{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        font-size: inherit;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+    vertical-align: middle;   
+}
+/* theme */
+
+header h1{
+    text-align: center;
+    line-height: 8rem;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+    font-size: 5rem;
+}
+
+/* flex*/
+.gallery-primary{
+    max-width: 120rem;
+    margin: 5rem auto 5rem;
+    background-color: #fff;
+}
+
+.gallery-primary ul{
+    display: flex;
+    padding:.5rem;
+    gap : .5rem;
+    justify-content: center;
+    flex-direction: row;
+    align-items:center;
+    flex-wrap: wrap;
+}
+.gallery-primary ul li{
+    flex-grow: 1; /* mettre un conteneur qui va prendre toute la place dispo*/
+    flex-shrink: 0; /*cela indique que les petits éléments peuvent s'ajouter*/
+    flex-basis: calc(100% / 4);
+}
+/* .gallery-primary ul li:nth-child(7){
+    flex-basis: calc(100% / 1);
+} */
+
+
+
+/* footer */
+footer p{
+    text-align: center;
+    color: #fff;
+}
+
+/* responsive */
+
+@media screen and (max-width:100rem){
+
+    .gallery-primary ul li{
+        flex-basis: calc(100% / 3);
+    }
+     /* .gallery-primary ul li:nth-child(7){
+        flex-basis: calc(100% / 1);
+    }
+     */
+
+}
